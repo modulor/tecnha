@@ -1,0 +1,54 @@
+@import 'https://fonts.googleapis.com/css?family=Reem+Kufi';
+
+body{
+    margin-top: 100px;
+    background-color: #dfdfdd;
+    font-family: 'Reem Kufi', sans-serif;
+    color: #545454;
+}
+
+/* navbar */
+
+@media (min-width: 768px){
+    .navbar > .container .navbar-brand {
+        margin-left: 0;
+    }    
+}
+
+/* */
+
+
+/* home */
+
+.container-gray{
+    background-color: #d4d4d2;    
+}
+
+.contact-form{
+    padding: 25px 0 25px 15px;
+}
+
+.touch-glass{
+    padding: 25px 0 0 15px;
+}
+
+.row-intro-text{
+    margin-top: 80px;
+}
+
+.blue-line{
+    margin-top: 7px;
+    height: 5px;
+    background-color: #6dbdc8;
+}
+
+p.contact-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#form-contact{
+    padding-right: 15px;
+}
+
+/* */
