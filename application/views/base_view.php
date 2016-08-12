@@ -8,7 +8,7 @@
     <link href="<?php echo base_url('assets/css/pe-icon-7-stroke.css') ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('assets/css/ct-navbar.css') ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet" />
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/font-awesome.min.css') ?>" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>    
 </head>
 <body>	
@@ -64,16 +64,16 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="container-gray touch-glass">
-					<div class="row">
+					<div class="row banner-touch-glass">
 						<div class="col-md-12">
 							<img src="<?php echo base_url('assets/images/banner-touch-glass.png') ?>" alt="the touch of glass">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-5">
-							<p class="row-intro-text">
+							<div class="row-intro-text">
 								<strong>MAKE THE GLASS HAPPEN<br>POR FIN EN MONTERREY.</strong>
-							</p>
+							</div>
 
 							<p>Una gama de posibilidades en vidrio. Soluciones funcionales y un servicio a tu medida, con garant&iacute;as integrales, &uacute;nicas en el mercado.</p>
 
@@ -115,10 +115,56 @@
 							  	<div class="form-group">
 								    <label for="direccion" class="col-sm-2 control-label">Direcci&oacute;n:</label>
 								    <div class="col-sm-10">
-							      		<textarea name="direccion" class="form-control" rows="5"></textarea>
+							      		<textarea name="direccion" class="form-control" rows="3"></textarea>
 								    </div>
 							  	</div>
+							  	<label class="margin-bottom-extra">Producto que deseas cotizar</label>
+							  	<div class="row margin-bottom-extra">
+							  		<div class="col-sm-6">
+							  			<input type="checkbox" class="form-control" name="producto" value="Canceles"> Canceles
+							  		</div>
+							  		<div class="col-sm-6">
+							  			<input type="checkbox" class="form-control" name="producto" value="Barandales"> Barandales
+							  		</div>
+							  	</div>
+								<div class="row margin-bottom-extra">
+							  		<div class="col-sm-6">
+							  			<input type="checkbox" class="form-control" name="producto" value="Puertas"> Puertas
+							  		</div>
+							  		<div class="col-sm-6">
+							  			<input type="checkbox" class="form-control" name="producto" value="Espejos"> Espejos
+							  		</div>
+							  	</div>
+							  	<div class="row margin-bottom-extra">
+							  		<div class="col-sm-12 text-center">
+							  			<input type="checkbox" class="form-control" name="producto" value="Accesorios"> <label class="accesorios">Accesorios</label>
+							  		</div>
+							  	</div>
+							  	<div class="row margin-bottom-extra">
+							  		<div class="col-sm-12">
+							  			<label>Te gustar&iacute;a una cita para toma de medidas:</label>
+							  			<input type="text" name="cita_medidas" class="form-control">
+							  		</div>
+							  	</div>
+							  	<div class="text-center">
+							  		<div class="divBtnSubmit">
+							  			<button type="button" class="btnSubmit">Enviar</button>	
+							  		</div>							  		
+							  	</div>
 							</form>
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<p><strong>Cotiza con nosotros &iexcl;Ll&aacute;manos!</strong></p>
+								</div>
+							</div>
+							<div class="row color-ta footer-contact">
+								<div class="col-sm-6 text-center">
+									<a class="contact-facebook" href="https://www.facebook.com/tecnha" target="_blank"><i class="fa fa-facebook-official"></i> Tecnha</a>
+								</div>
+								<div class="col-sm-6 text-center">
+									<i class="fa fa-phone"></i> <strong>2136-5555</strong>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -7,6 +7,10 @@ body{
     color: #545454;
 }
 
+.color-ta{
+    color: #4e9ca9;
+}
+
 /* navbar */
 
 @media (min-width: 768px){
@@ -32,14 +36,19 @@ body{
     padding: 25px 0 0 15px;
 }
 
+.banner-touch-glass{
+    margin-bottom: 26px;
+}
+
 .row-intro-text{
-    margin-top: 80px;
+    margin: 80px 0 10px 0;
+    font-size: 18px;
 }
 
 .blue-line{
     margin-top: 7px;
     height: 5px;
-    background-color: #6dbdc8;
+    background-color: #4e9ca9;
 }
 
 p.contact-title{
@@ -48,7 +57,70 @@ p.contact-title{
 }
 
 #form-contact{
+    margin: 0px 0 20px 0;
     padding-right: 15px;
+}
+
+#form-contact label{
+    font-weight: normal;
+}
+
+#form-contact .form-control{
+    background-color: #cccccc;
+    border: none;
+}
+
+#form-contact input[type='text'].form-control{
+    height: 25px;
+}
+
+#form-contact input[type='checkbox'].form-control{
+    height: 12px;
+    background-color: #cccccc !important;
+    display: inline !important;
+    width: initial;
+    margin: 0;
+    width: 12px;
+}
+
+label.accesorios{
+    display: inline !important;
+}
+
+.margin-bottom-extra{
+    margin-bottom: 15px;
+}
+
+.divBtnSubmit{
+    background-color: #efefef;
+    width: 70px;
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+
+.divBtnSubmit:hover{
+    background-color: #e6e6e6;
+}
+
+.btnSubmit{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #4e9ca9;
+    font-size: 16px;
+    padding: 0;
+}
+
+.footer-contact{
+    font-size: 16px;
+}
+
+a.contact-facebook:hover, a.contact-facebook:active, a.contact-facebook:visited, a.contact-facebook:link{
+    color: #4e9ca9;
+    text-decoration: none;
+}
+
+a.contact-facebook:hover{
+    color: #317580;
 }
 
 /* */
