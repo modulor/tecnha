@@ -30,25 +30,25 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
 							<li>
-								<a href="<?php echo base_url() ?>">
+								<a href="<?php echo base_url() ?>" data-target='home'>
 							    	<i class="pe-7s-home"></i>
 							    	<p>Inicio</p>
 								</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url() ?>">
+								<a href="<?php echo base_url() ?>" data-target='quienes-somos'>
 							    	<i class="pe-7s-user"></i>
 							    	<p>Qui&eacute;nes somos</p>
 								</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url() ?>">
+								<a href="<?php echo base_url() ?>" data-target='productos'>
 							    	<i class="pe-7s-box2"></i>
 							    	<p>Productos</p>
 								</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url() ?>">
+								<a href="<?php echo base_url() ?>" data-target='home'>
 							    	<i class="pe-7s-mail"></i>
 							    	<p>Contacto</p>
 								</a>
@@ -61,7 +61,7 @@
 	</div>
 
 	<div class="container">
-		<div class="row margin-bottom-extra">
+		<div class="row margin-bottom-extra" id="home">
 			<div class="col-md-8">
 				<div class="container-gray touch-glass">
 					<div class="row banner-touch-glass">
@@ -158,38 +158,96 @@
 								</div>
 							</div>
 							<div class="row color-ta footer-contact">
-								<div class="col-sm-6 text-center">
-									<a class="contact-facebook" href="https://www.facebook.com/tecnha" target="_blank"><i class="fa fa-facebook-official"></i> Tecnha</a>
-								</div>
-								<div class="col-sm-6 text-center">
+								<div class="col-sm-12 text-center footer-contact-phone">
 									<i class="fa fa-phone"></i> <strong>2136-5555</strong>
 								</div>
+								<div class="col-sm-12 text-center">
+									<a class="contact-facebook" href="https://www.facebook.com/tecnha" target="_blank"><i class="fa fa-facebook-official"></i> Tecnha</a>
+								</div>								
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- quienes somos -->
+		<div class="row margin-bottom-extra" id="quienes-somos">
+			<div class="col-md-12 section-title">				
+				<h2><span>Quiénes somos</span></h2>
+			</div>
+		</div>
 		<div class="row margin-bottom-extra">
+			<div class="col-sm-4">
+				<div class="quienes-somos-text">
+					<p>Una marca con experiencia, enfocada a mejorar la experiencia de compra de productos en vidrio, con un abanico de precios estructurado de acuerdo al nivel de calidad y tipo de producto que deseas contratar.</p>
+					<p>Nuestra primer sucursal se encuentra ubicada en Plaza Q, en la Zona Cumbres, por ser &eacute;ste un sector de gran crecimiento y demanda.</p>
+
+					<p class="color-ta">
+						Plaza Q&uacute;, Sexto Sector, Local 13,<br>
+						Colonia Cumbres, Mty. N.L.
+					</p>
+
+					<p class="color-ta">Tel. (81) 2163-5555</p>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<img src="<?php echo base_url('assets/images/banner-quienes-somos.jpg') ?>" alt="quienes somos" class="img-responsive img-thumbnail">
+			</div>
+		</div>
+		<!-- quienes somos end -->
+
+		<!-- slider -->
+		<div class="row margin-bottom-extra" id="productos">
 			<div class="col-md-12">
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">					
 					<ol class="carousel-indicators">
 						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="7"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="8"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="9"></li>
 					</ol>
 					
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="<?php echo base_url('assets/images/slider/one.jpg') ?>" alt="one">
+							<img src="<?php echo base_url('assets/images/slider/1.jpg') ?>">
 							<div class="carousel-caption"></div>
 						</div>
 						<div class="item">
-							<img src="<?php echo base_url('assets/images/slider/two.jpg') ?>" alt="two">
+							<img src="<?php echo base_url('assets/images/slider/2.jpg') ?>">
 							<div class="carousel-caption"></div>
 						</div>
 						<div class="item">
-							<img src="<?php echo base_url('assets/images/slider/three.jpg') ?>" alt="three">
+							<img src="<?php echo base_url('assets/images/slider/3.jpg') ?>">
+							<div class="carousel-caption"></div>
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url('assets/images/slider/4.jpg') ?>">
+							<div class="carousel-caption"></div>
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url('assets/images/slider/5.jpg') ?>">
+							<div class="carousel-caption"></div>
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url('assets/images/slider/6.jpg') ?>">
+							<div class="carousel-caption"></div>
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url('assets/images/slider/7.jpg') ?>">
+							<div class="carousel-caption"></div>
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url('assets/images/slider/8.jpg') ?>">
+							<div class="carousel-caption"></div>
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url('assets/images/slider/9.jpg') ?>">
 							<div class="carousel-caption"></div>
 						</div>
 					</div>
@@ -206,6 +264,9 @@
 				</div>
 			</div>
 		</div>
+		<!-- slider end -->
+
+		<!-- mapa contacto -->
 		<div class="row margin-bottom-extra">
 			<div class="col-sm-12">
 				<div class="container-gray">
@@ -269,7 +330,8 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>	
+		<!-- mapa contacto end -->	
 	</div>	
 
 	<!-- footer -->
@@ -284,10 +346,9 @@
 	</footer>
 	<!-- footer end -->
 
-
-
 	<script src="<?php echo base_url('assets/js/jquery-1.10.2.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/bootstrap.js') ?>"></script>	
 	<script src="<?php echo base_url('assets/js/ct-navbar.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/scroll.js') ?>"></script>
 </body>
 </html>

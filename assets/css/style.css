@@ -7,6 +7,10 @@ body{
     color: #545454;
 }
 
+h2{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
 .color-ta{
     color: #4e9ca9;
 }
@@ -41,7 +45,7 @@ body{
 }
 
 .banner-touch-glass{
-    margin-bottom: 26px;
+    margin-bottom: 66px;
 }
 
 .row-intro-text{
@@ -122,6 +126,10 @@ label.accesorios{
     font-size: 16px;
 }
 
+.footer-contact-phone{
+    font-size: 28px;
+}
+
 a.contact-facebook:hover, a.contact-facebook:active, a.contact-facebook:visited, a.contact-facebook:link{
     color: #4e9ca9;
     text-decoration: none;
@@ -137,10 +145,25 @@ footer{
     height: 54px;
 }
 
+.section-title:before{
+    background: none repeat scroll 0 0 #4e9ca9;
+    bottom: 0px;
+    content: " ";
+    height: 2px;    
+    overflow: hidden;
+    position: absolute;
+    right: auto;
+    width: 150px;
+}
+
 .text-footer{
     font-size: 18px;
     text-align: center;
     padding-top: 15px;
+}
+
+.quienes-somos-text p{
+    font-size: 20px;
 }
 
 /* */
