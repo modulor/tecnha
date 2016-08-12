@@ -28,8 +28,12 @@ body{
     background-color: #d4d4d2;    
 }
 
-.contact-form{
+.container-contact-form{
     padding: 25px 0 25px 15px;
+}
+
+.container-contact-form-footer{
+    padding: 25px 0 0 15px;
 }
 
 .touch-glass{
@@ -56,31 +60,35 @@ p.contact-title{
     font-size: 18px;
 }
 
-#form-contact{
+.form-contact{
     margin: 0px 0 20px 0;
     padding-right: 15px;
 }
 
-#form-contact label{
+.form-contact label{
     font-weight: normal;
 }
 
-#form-contact .form-control{
+.form-contact .form-control{
     background-color: #cccccc;
     border: none;
 }
 
-#form-contact input[type='text'].form-control{
+.form-contact input[type='text'].form-control{
     height: 25px;
 }
 
-#form-contact input[type='checkbox'].form-control{
+.form-contact input[type='checkbox'].form-control{
     height: 12px;
     background-color: #cccccc !important;
     display: inline !important;
     width: initial;
     margin: 0;
     width: 12px;
+}
+
+.form-contact-footer{
+    margin-bottom: 0;
 }
 
 label.accesorios{
@@ -121,6 +129,18 @@ a.contact-facebook:hover, a.contact-facebook:active, a.contact-facebook:visited,
 
 a.contact-facebook:hover{
     color: #317580;
+}
+
+footer{
+    background: url('../images/bg-footer.png') repeat-x;
+    margin-bottom: 30px;    
+    height: 54px;
+}
+
+.text-footer{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 15px;
 }
 
 /* */

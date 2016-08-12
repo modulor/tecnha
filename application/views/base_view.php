@@ -61,7 +61,7 @@
 	</div>
 
 	<div class="container">
-		<div class="row">
+		<div class="row margin-bottom-extra">
 			<div class="col-md-8">
 				<div class="container-gray touch-glass">
 					<div class="row banner-touch-glass">
@@ -88,7 +88,7 @@
 				</div>				
 			</div>
 			<div class="col-md-4">
-				<div class="container-gray contact-form">
+				<div class="container-gray container-contact-form">
 					<div class="row">
 						<div class="col-xs-5">
 							<p class="contact-title">CONTACTO</p>
@@ -99,7 +99,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<form id="form-contact" class="form-horizontal">
+							<form class="form-horizontal form-contact">
 								<div class="form-group">
 								    <label for="nombre" class="col-sm-2 control-label">Nombre:</label>
 								    <div class="col-sm-10">
@@ -170,31 +170,119 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row margin-bottom-extra">
 			<div class="col-md-12">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum nulla, corporis, eligendi libero quidem veniam quam, quod perspiciatis beatae autem possimus similique reprehenderit. Accusantium iste consequatur voluptas ipsum ab.</p>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">					
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="<?php echo base_url('assets/images/slider/one.jpg') ?>" alt="one">
+							<div class="carousel-caption"></div>
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url('assets/images/slider/two.jpg') ?>" alt="two">
+							<div class="carousel-caption"></div>
+						</div>
+						<div class="item">
+							<img src="<?php echo base_url('assets/images/slider/three.jpg') ?>" alt="three">
+							<div class="carousel-caption"></div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>						
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
 			</div>
 		</div>
+		<div class="row margin-bottom-extra">
+			<div class="col-sm-12">
+				<div class="container-gray">
+					<div class="row">
+						<div class="col-sm-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.8660627089403!2d-100.41318261360422!3d25.74194250084502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662973e9d464199%3A0xe876ac225d0985cc!2zUcO6IFBsYXph!5e0!3m2!1ses!2smx!4v1471014527478" width="100%" height="350" frameborder="0" style="border:0; padding: 0; margin: 0;" allowfullscreen></iframe></div>
+						<div class="col-sm-6">
+							<!-- contacto -->
+							<div class="container-gray container-contact-form-footer">
+								<div class="row">
+									<div class="col-xs-5">
+										<p class="contact-title">CONTACTO</p>
+									</div>
+									<div class="col-xs-7">
+										<div class="blue-line"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<form class="form-horizontal form-contact form-contact-footer">
+											<div class="form-group">
+											    <label for="nombre" class="col-sm-2 control-label">Nombre:</label>
+											    <div class="col-sm-10">
+										      		<input type="text" class="form-control" name="nombre">
+											    </div>
+										  	</div>
+										  	<div class="form-group">
+											    <label for="telefono" class="col-sm-2 control-label">Tel&eacute;fono:</label>
+											    <div class="col-sm-10">
+										      		<input type="text" class="form-control" name="telefono">
+											    </div>
+										  	</div>
+										  	<div class="form-group">
+											    <label for="direccion" class="col-sm-2 control-label">Direcci&oacute;n:</label>
+											    <div class="col-sm-10">
+										      		<textarea name="direccion" class="form-control" rows="3"></textarea>
+											    </div>
+										  	</div>
+										  	<label class="margin-bottom-extra">Producto que deseas cotizar</label>
+										  	<div class="row margin-bottom-extra">
+										  		<div class="col-sm-12 text-center">
+										  			<input type="checkbox" class="form-control" name="producto" value="Canceles"> Canceles &nbsp;&nbsp;&nbsp;
+										  			<input type="checkbox" class="form-control" name="producto" value="Barandales"> Barandales &nbsp;&nbsp;&nbsp;
+													<input type="checkbox" class="form-control" name="producto" value="Puertas"> Puertas &nbsp;&nbsp;&nbsp;
+													<input type="checkbox" class="form-control" name="producto" value="Espejos"> Espejos &nbsp;&nbsp;&nbsp;
+													<input type="checkbox" class="form-control" name="producto" value="Accesorios"> <label class="accesorios">Accesorios</label> 
+										  		</div>										  		
+										  	</div>											
+										  	<div class="row">
+										  		<div class="col-sm-12 text-center">
+											  		<div class="divBtnSubmit">
+											  			<button type="button" class="btnSubmit">Enviar</button>	
+											  		</div>
+										  		</div>
+										  	</div>
+										</form>										
+									</div>
+								</div>
+							</div>
+							<!-- contacto end -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
 	</div>	
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="text-footer">Plaza QU (junto al Super Roma) Local 3 / Planta Alta Av. Paseo de los Leones 2001 en Cumbres Madeira. Mty., N.L.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
 
 
 
