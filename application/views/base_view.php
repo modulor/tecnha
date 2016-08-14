@@ -9,6 +9,7 @@
 	<link href="<?php echo base_url('assets/css/ct-navbar.css') ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/font-awesome.min.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/sweetalert.css') ?>" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>    
 </head>
 <body>	
@@ -99,45 +100,45 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<form class="form-horizontal form-contact">
+							<form id="formContactHome" class="form-horizontal form-contact">
 								<div class="form-group">
 								    <label for="nombre" class="col-sm-2 control-label">Nombre:</label>
 								    <div class="col-sm-10">
-							      		<input type="text" class="form-control" name="nombre">
+							      		<input type="text" class="form-control" id="nombreHome" name="nombre">
 								    </div>
 							  	</div>
 							  	<div class="form-group">
 								    <label for="telefono" class="col-sm-2 control-label">Tel&eacute;fono:</label>
 								    <div class="col-sm-10">
-							      		<input type="text" class="form-control" name="telefono">
+							      		<input type="text" class="form-control" id="telefonoHome" name="telefono">
 								    </div>
 							  	</div>
 							  	<div class="form-group">
 								    <label for="direccion" class="col-sm-2 control-label">Direcci&oacute;n:</label>
 								    <div class="col-sm-10">
-							      		<textarea name="direccion" class="form-control" rows="3"></textarea>
+							      		<textarea id="direccionHome" name="direccion" class="form-control" rows="3"></textarea>
 								    </div>
 							  	</div>
 							  	<label class="margin-bottom-extra">Producto que deseas cotizar</label>
 							  	<div class="row margin-bottom-extra">
 							  		<div class="col-sm-6">
-							  			<input type="checkbox" class="form-control" name="producto" value="Canceles"> Canceles
+							  			<input type="checkbox" class="form-control" name="canceles" value="1"> Canceles
 							  		</div>
 							  		<div class="col-sm-6">
-							  			<input type="checkbox" class="form-control" name="producto" value="Barandales"> Barandales
+							  			<input type="checkbox" class="form-control" name="barandales" value="1"> Barandales
 							  		</div>
 							  	</div>
 								<div class="row margin-bottom-extra">
 							  		<div class="col-sm-6">
-							  			<input type="checkbox" class="form-control" name="producto" value="Puertas"> Puertas
+							  			<input type="checkbox" class="form-control" name="puertas" value="1"> Puertas
 							  		</div>
 							  		<div class="col-sm-6">
-							  			<input type="checkbox" class="form-control" name="producto" value="Espejos"> Espejos
+							  			<input type="checkbox" class="form-control" name="espejos" value="1"> Espejos
 							  		</div>
 							  	</div>
 							  	<div class="row margin-bottom-extra">
-							  		<div class="col-sm-12 text-center">
-							  			<input type="checkbox" class="form-control" name="producto" value="Accesorios"> <label class="accesorios">Accesorios</label>
+							  		<div class="col-sm-12">
+							  			<input type="checkbox" class="form-control" name="accesorios" value="1"> Accesorios
 							  		</div>
 							  	</div>
 							  	<div class="row margin-bottom-extra">
@@ -148,8 +149,9 @@
 							  	</div>
 							  	<div class="text-center">
 							  		<div class="divBtnSubmit">
-							  			<button type="button" class="btnSubmit">Enviar</button>	
-							  		</div>							  		
+							  			<div id="responseHome"></div>
+							  			<button id="contactHome" type="button" class="btnSubmit">Enviar</button>	
+							  		</div>		  		
 							  	</div>
 							</form>
 							<div class="row">
@@ -285,39 +287,40 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<form class="form-horizontal form-contact form-contact-footer">
+										<form id="formContactFooter" class="form-horizontal form-contact form-contact-footer">
 											<div class="form-group">
 											    <label for="nombre" class="col-sm-2 control-label">Nombre:</label>
 											    <div class="col-sm-10">
-										      		<input type="text" class="form-control" name="nombre">
+										      		<input type="text" class="form-control" id="nombreFooter" name="nombre">
 											    </div>
 										  	</div>
 										  	<div class="form-group">
 											    <label for="telefono" class="col-sm-2 control-label">Tel&eacute;fono:</label>
 											    <div class="col-sm-10">
-										      		<input type="text" class="form-control" name="telefono">
+										      		<input type="text" class="form-control" id="telefonoFooter" name="telefono">
 											    </div>
 										  	</div>
 										  	<div class="form-group">
 											    <label for="direccion" class="col-sm-2 control-label">Direcci&oacute;n:</label>
 											    <div class="col-sm-10">
-										      		<textarea name="direccion" class="form-control" rows="3"></textarea>
+										      		<textarea id="direccionFooter" name="direccion" class="form-control" rows="3"></textarea>
 											    </div>
 										  	</div>
 										  	<label class="margin-bottom-extra">Producto que deseas cotizar</label>
 										  	<div class="row margin-bottom-extra">
 										  		<div class="col-sm-12 text-center">
-										  			<input type="checkbox" class="form-control" name="producto" value="Canceles"> Canceles &nbsp;&nbsp;&nbsp;
-										  			<input type="checkbox" class="form-control" name="producto" value="Barandales"> Barandales &nbsp;&nbsp;&nbsp;
-													<input type="checkbox" class="form-control" name="producto" value="Puertas"> Puertas &nbsp;&nbsp;&nbsp;
-													<input type="checkbox" class="form-control" name="producto" value="Espejos"> Espejos &nbsp;&nbsp;&nbsp;
-													<input type="checkbox" class="form-control" name="producto" value="Accesorios"> <label class="accesorios">Accesorios</label> 
+										  			<input type="checkbox" class="form-control" name="canceles" value="1"> Canceles &nbsp;&nbsp;&nbsp;
+										  			<input type="checkbox" class="form-control" name="barandales" value="1"> Barandales &nbsp;&nbsp;&nbsp;
+													<input type="checkbox" class="form-control" name="puertas" value="1"> Puertas &nbsp;&nbsp;&nbsp;
+													<input type="checkbox" class="form-control" name="espejos" value="1"> Espejos &nbsp;&nbsp;&nbsp;
+													<input type="checkbox" class="form-control" name="accesorios" value="1"> <label class="accesorios">Accesorios</label> 
 										  		</div>										  		
 										  	</div>											
 										  	<div class="row">
 										  		<div class="col-sm-12 text-center">
 											  		<div class="divBtnSubmit">
-											  			<button type="button" class="btnSubmit">Enviar</button>	
+											  			<div id="responseFooter"></div>
+											  			<button id="contactFooter" type="button" class="btnSubmit">Enviar</button>	
 											  		</div>
 										  		</div>
 										  	</div>
@@ -346,9 +349,12 @@
 	</footer>
 	<!-- footer end -->
 
-	<script src="<?php echo base_url('assets/js/jquery-1.10.2.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/jquery-2.1.4.min.js') ?>"></script>
+	<script>var base_url = '<?php echo base_url() ?>';</script>
 	<script src="<?php echo base_url('assets/js/bootstrap.js') ?>"></script>	
 	<script src="<?php echo base_url('assets/js/ct-navbar.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/scroll.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/sweetalert.min.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/email.js') ?>"></script>
 </body>
 </html>
